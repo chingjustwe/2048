@@ -96,7 +96,7 @@ let handler2048 = {};
 			});
 			document.addEventListener('touchmove', (event) => {
 				event.preventDefault();
-			});
+			}, {passive: false});
 			document.addEventListener('touchend', (event) => {
 				this.endx = event.changedTouches[0].pageX;
 				this.endy = event.changedTouches[0].pageY;
